@@ -12,7 +12,6 @@ function virt-check() {
     # Deny LXC
     if [ "$(systemd-detect-virt)" == "lxc" ]; then
       echo "LXC virtualization is not supported (yet)."
-      exit
     fi
   else
     echo "Warning: this script might not work correctly in your system."
